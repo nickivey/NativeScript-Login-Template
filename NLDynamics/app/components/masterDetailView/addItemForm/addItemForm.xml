@@ -1,0 +1,20 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" actionBarHidden="true" loaded="pageLoaded" id="masterDetailViewModelAddScreen" cssClass="screen">
+    <GridLayout rows="auto, *">
+        <GridLayout rows="auto, *" cssClass="page-header">
+            <GridLayout cssClass="action-bar" columns="auto, *, auto">
+                <Button text="Cancel" onTap="onCancelTap" />
+                <Label col="1" text="Create" cssClass="action-bar-title" />
+                <Button col="2" text="Save" onTap="onSaveTap" />
+            </GridLayout>
+            <!-- Workaround for one sided border -->
+            <StackLayout row="1" cssClass="action-bar-border" height="1"></StackLayout>
+        </GridLayout>
+
+        <StackLayout row="1">
+            <ScrollView>
+                <!-- additional view content -->
+            </ScrollView>
+        </StackLayout>
+    </GridLayout>
+
+</Page>

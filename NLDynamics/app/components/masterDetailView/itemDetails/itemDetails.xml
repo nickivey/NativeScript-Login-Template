@@ -1,0 +1,25 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:widgets="utils/widgets" navigatedTo="navigatedTo" id="masterDetailViewModelDetailsScreen" cssClass="screen">
+    <Page.actionBar>
+        <widgets:action-bar />
+    </Page.actionBar>
+
+    <ScrollView>
+        <StackLayout>
+
+            <GridLayout rows="auto, *">
+                <GridLayout rows="auto" columns="*, *">
+
+
+                    <widgets:button col="1" text="Delete" tap="onDeleteItemTap" />
+
+                </GridLayout>
+                <StackLayout row="1">
+
+
+                    <!-- additional view content -->
+                </StackLayout>
+            </GridLayout>
+
+        </StackLayout>
+    </ScrollView>
+</Page>
